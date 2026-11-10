@@ -1,0 +1,186 @@
+:root {
+  --maxWidth:425px;
+
+  --page-bg-color: #fff;
+  --base-text-color: #222;
+  --base-text-color-gray:#767676;
+  --base-selector-color:#f6f6f6;
+}
+:root:root {
+  --van-tabbar-item-icon-margin-bottom:3px;
+  --van-tabbar-item-active-color: var(--base-text-color);
+  --van-tabbar-item-text-color: var(--base-text-color-gray);
+
+  --van-nav-bar-background:#fff;
+  --van-nav-bar-title-text-color:#fff;
+  --van-nav-bar-title-font-size: 16px;
+  --van-nav-bar-icon-color:var(--base-text-color);
+  --van-nav-bar-height:5.6rem;
+  --van-nav-bar-text-color: var(--base-text-color);
+  
+  --van-field-input-text-color:#222;
+
+  --van-button-round-radius:5px;
+
+  --van-checkbox-label-color:#222;
+
+  --van-popup-background:#fff;
+
+  --van-tab-active-text-color: var(--base-text-color);
+  --van-tab-text-color: var(--base-text-color-gray);
+  /* --van-tabs-line-height: 3.17rem; */
+  --van-tab-font-size: 14px;
+  --van-tabs-bottom-bar-color: var(--base-text-color);
+  --van-tabs-bottom-bar-width: 30px;
+  --van-tabs-bottom-bar-height: 3px;
+
+  --van-sidebar-selected-border-color: var(--base-text-color);
+  --van-sidebar-selected-background: var(--base-text-color);
+  --van-sidebar-text-color: var(--base-text-color);
+  --van-sidebar-selected-text-color: var(--page-bg-color);
+  --van-sidebar-padding: 5px 5px;
+  --van-sidebar-font-size: 12px;
+  --van-sidebar-background: var(--base-selector-color);
+  --van-skeleton-paragraph-background:var(--base-selector-color);
+
+  --van-button-primary-border-color: var(--base-text-color);
+  --van-button-primary-background: var(--base-text-color);
+  --van-button-default-border-color: var(--base-text-color);
+
+  --van-checkbox-checked-icon-color: var(--base-text-color);
+
+  --van-back-top-background: var(--base-text-color);
+
+  --van-submit-bar-tip-color: var(--base-text-color);
+  --van-submit-bar-price-color: var(--base-text-color);
+  /* --van-button-danger-background: var(--base-text-color); */
+  --van-button-danger-border-color: var(--van-danger-color);
+
+  --van-step-active-color: var(--base-text-color);
+  --van-step-finish-line-color: var(--base-text-color);
+  --van-notice-bar-text-color: var(--base-text-color-gray);
+  --van-notice-bar-background: var(--page-bg-color);
+
+  --van-overlay-background: rgba(0, 0, 0, .4);
+
+  --van-count-down-text-color:	#c44a01;
+--van-count-down-font-size:	16px;
+
+--van-sidebar-line-height: 1.2rem;
+--van-sidebar-font-size: 1.2rem;
+--van-sidebar-padding: 1.2rem 0.5rem;
+
+--common-header-icon-color:#ffffff;
+--common-header-text-color:#FFFFFFA8;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  align-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  font-size: 12px;
+  background-color: var(--page-bg-color);
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* .card {
+  padding: 2em;
+} */
+
+#app {
+  position: relative;
+  margin: 0 auto;
+  width: 100vw;
+  min-height: 100vh;
+  max-width: 425px;
+  background-color: var(--page-bg-color);
+  color: var(--base-text-color);
+}
+.tabbar-page {
+  padding-bottom: 75px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+.van-tab {
+  position: relative;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0 var(--van-padding-base);
+  color: var(--van-tab-text-color);
+  font-size: var(--van-tab-font-size);
+  line-height: var(--van-tab-line-height);
+  font-weight: 600;
+  cursor: pointer;
+}
+.van-tabbar--fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  max-width: 42.5rem !important;
+  left: 50% !important;
+  transform: translate(-50%) !important;
+}
+
+.textline-2{
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+#s-chat-plugin{
+  display: none !important;
+}

@@ -1,0 +1,69 @@
+{
+  "name": "topthink/think",
+  "description": "the new thinkphp framework",
+  "type": "project",
+  "keywords": [
+    "framework",
+    "thinkphp",
+    "ORM"
+  ],
+  "homepage": "http://thinkphp.cn/",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "liu21st",
+      "email": "liu21st@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.4.0",
+    "topthink/framework": "^6.0.0",
+    "topthink/think-orm": "^2.0",
+    "topthink/think-captcha": "^3.0",
+    "firebase/php-jwt": "^5.0",
+    "aliyuncs/oss-sdk-php": "^2.3",
+    "topthink/think-image": "^1.0",
+    "alibabacloud/client": "^1.5",
+    "ext-json": "*",
+    "ext-bcmath": "*",
+    "yansongda/pay": "^3.3",
+    "hyperf/pimple": "^2.1",
+    "liliuwei/thinkphp-social": "^1.3",
+    "topthink/think-queue": "^3.0",
+    "overtrue/pinyin": "^4.1",
+    "aws/aws-sdk-php": "3.319.2",
+    "amadeus4dev/amadeus-php": "*",
+    "ext-curl": "*",
+    "nowpayments/nowpayments-api-php": "dev-main",
+    "ext-redis": "*",
+    "stripe/stripe-php": "*"
+  },
+  "require-dev": {
+    "symfony/var-dumper": "^4.4",
+    "topthink/think-trace": "^1.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "app\\": "app"
+    },
+    "psr-0": {
+      "": "extend/"
+    }
+  },
+  "config": {
+    "preferred-install": "dist",
+    "secure-http": false,
+    "allow-plugins": {
+      "topthink/think-installer": true
+    },
+    "platform": {
+      "php": "7.4"
+    }
+  },
+  "scripts": {
+    "post-autoload-dump": [
+      "@php think service:discover",
+      "@php think vendor:publish"
+    ]
+  }
+}

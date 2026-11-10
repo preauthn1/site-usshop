@@ -1,0 +1,128 @@
+.content-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: all .3s;
+    position: relative;
+}
+
+.content-item__circle {
+    width: 64px;
+    height: 89px;
+}
+
+.content-img__circle {
+    margin-bottom: 4px;
+    border-radius: 50%;
+    background: #f5f5f5;
+    border: 1px solid hsla(0, 0%, 84.3%, .4);
+    width: 60px;
+    height: 60px;
+}
+.content-item__active {
+    border: 2px solid #000;
+    padding: 2px;
+}
+
+.content-img {
+    display: block;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.content-label__circle {
+    width: 64px;
+    height: 24px;
+    font-size: 11px;
+    line-height: 13px;
+}
+
+.content-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.sort-export__sort {
+    flex: 1;
+    display: -ms-flexbox;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow: hidden;
+    padding: 0 6px;
+}
+
+.sort-export__filter {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.nav-bar__filter {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    line-height: 14px;
+    padding: 6px 16px 6px 0;
+}
+
+.nav-bar__filter-label {
+    padding-left: 16px;
+    border-left: 1px solid #e5e5e5;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 12px;
+    color: rgba(0, 0, 0, .6);
+}
+
+.nav-bar__filter-icon {
+    margin-left: 2px;
+    display: flex;
+    width: 12px;
+    height: 12px;
+    align-items: center;
+    justify-content: center;
+    color: rgba(0, 0, 0, .6);
+}
+
+.nav-bar__button {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 6px 6px 6px;
+}
+
+.nav-bar__label {
+    font-size: 12px;
+    color: rgba(0, 0, 0, .6);
+}
+
+.no-scroll-content {
+    overflow: hidden;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+}
+
+.recommend-selected {
+    color: #000;
+    font-size: 12px;
+    font-weight: 700;
+}

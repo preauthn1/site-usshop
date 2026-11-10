@@ -1,0 +1,100 @@
+:root {
+  --maxWidth:425px;
+
+  --page-bg-color: #fff;
+  --base-text-color: #222;
+  --base-text-color-gray:#767676;
+}
+:root:root {
+  --van-tabbar-item-icon-margin-bottom:3px;
+  --van-tabbar-item-active-color: var(--base-text-color);
+  --van-tabbar-item-text-color: var(--base-text-color-gray);
+
+  --van-nav-bar-background:#fff;
+  --van-nav-bar-title-text-color:#fff;
+  --van-nav-bar-title-font-size: 16px;
+  --van-nav-bar-icon-color:#fff;
+  --van-nav-bar-height:5.6rem;
+  
+  --van-field-input-text-color:#222;
+
+  --van-button-round-radius:5px;
+
+  --van-checkbox-label-color:#222;
+
+  --van-popup-background:#fff;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  font-size: 15px;
+  background-color: var(--page-bg-color);
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.card {
+  padding: 2em;
+}
+
+#app {
+  position: relative;
+  margin: 0 auto;
+  width: 100vw;
+  min-height: 100vh;
+  max-width: 425px;
+  background-color: var(--page-bg-color);
+  color: var(--page-bg-color);
+  
+}
+.tabbar-page {
+  padding-bottom: 75px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

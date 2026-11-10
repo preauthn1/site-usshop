@@ -1,0 +1,127 @@
+/**
+ * base.css
+ */
+html,body{margin: 0;padding: 0;height: 100%;font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,SimSun,sans-serif;}
+body{font-size:14px;}
+a,a:hover,a:link,a:visited{outline:none;text-decoration:none;cursor:pointer}
+ul,li{list-style: none;}
+article, aside, blockquote, body, button, dd, details, div, dl, dt, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr, input, legend, li, menu, nav, ol, p, section, td, textarea, th, ul{margin: 0;padding: 0;}
+
+.u-left{float:left;}
+.u-right{float:right;}
+.u-none{display:none;}
+.u-text-center{text-align:left;}
+.u-text-left{text-align:left;}
+.u-text-right{text-align:right;}
+.u-w-block{width: 100%;}
+.u-form{margin: 0 auto;}
+.u-form-left{max-width: 680px;}
+.u-clearfix{clear: both;}
+.u-clearfix:after{content: '\20';clear: both;display: block;height: 0;}
+
+/**间距**/
+.u-m-10{margin:10px}
+.u-m-15{margin:15px}
+.u-m-20{margin:20px}
+.u-mt-5{margin-top:5px}
+.u-mt-10{margin-top:10px}
+.u-mt-15{margin-top:15px}
+.u-mt-20{margin-top:20px}
+.u-mt-30{margin-top:30px}
+.u-mt-45{margin-top:45px}
+.u-mt-50{margin-top:50px}
+.u-ml-5{margin-left:5px}
+.u-ml-10{margin-left:10px}
+.u-ml-15{margin-left:15px}
+.u-ml-20{margin-left:20px}
+.u-ml-30{margin-left:30px}
+.u-mb-10{margin-bottom:10px}
+.u-mb-15{margin-bottom:15px}
+.u-mb-20{margin-bottom:20px}
+.u-mb-30{margin-bottom:30px}
+.u-mr-10{margin-right:10px}
+.u-mr-20{margin-right:20px}
+.u-p-10{padding:10px}
+.u-p-15{padding:15px}
+.u-p-20{padding:20px}
+.u-p-30{padding:30px}
+.u-pt-5{padding-top:5px}
+.u-pt-10{padding-top:10px}
+.u-pt-15{padding-top:15px}
+.u-pt-20{padding-top:20px}
+.u-pt-30{padding-top:30px}
+.u-pl-5{padding-left:5px}
+.u-pl-10{padding-left:10px}
+.u-pl-20{padding-left:20px}
+.u-pr-5{padding-right:5px}
+.u-pb-10{padding-bottom:10px}
+.u-pb-20{padding-bottom:20px}
+.u-5mt{margin-top: -5px}
+.el-dialog__header{border-bottom: 1px solid #F2F2F2;}
+.el-dialog__footer{border-top: 1px solid #F2F2F2;}
+.el-dialog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0 !important;
+    transform: translate(-50%, -50%);
+    max-height: calc(100% - 30px);
+    max-width: calc(100% - 30px);
+    display: flex;
+    flex-direction: column;
+}
+.el-dialog__body{max-height: 60vh;overflow-y: auto;}
+.el-select-dropdown{
+    z-index: 99999 !important;
+}
+.el-textarea .el-input__count{
+    line-height: initial !important;
+}
+.el-tooltip__popper.is-dark{
+    max-width: 90%;
+}
+/**字体**/
+.u-f-12{font-size:12px}
+.u-f-14{font-size:14px}
+.u-f-16{font-size:16px}
+.u-f-18{font-size:18px}
+.u-f-20{font-size:20px}
+.u-f-24{font-size:24px}
+.u-f-28{font-size:28px}
+.u-f-30{font-size:30px}
+.u-f-36{font-size:36px}
+.u-f-40{font-size:40px}
+
+.u-color-success{color: #67C23A;}
+.u-color-warning{color: #E6A23C;}
+.u-color-danger{color: #F56C6C;}
+.u-color-info{color: #909399;}
+.u-color-gray{color: #888888;}
+
+[class^="hg-icon-"], [class*=" hg-icon-"] {font-family:"iconfont" !important;font-size:16px;font-style:normal;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+
+.el-table th{background: #f7f7f7;}
+.el-table th>.cell{color: #4d4d4d;}
+
+.table-expand-wrapper {font-size: 0;}
+.table-expand-wrapper label {width: 90px;color: #99a9bf;}
+.table-expand-wrapper .el-form-item {margin-right: 0;margin-bottom: 0;}
+
+.table-dropdown .el-dropdown-link {cursor: pointer;color: #409EFF;}
+.table-dropdown .el-icon-arrow-down {font-size: 12px;}
+
+.ellipsis{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.ellipsis-2{text-overflow:ellipsis;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;}
+.ellipsis-3{text-overflow:ellipsis;overflow:hidden;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;}
+.ellipsis-4{text-overflow:ellipsis;overflow:hidden;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;}
+
+.distpicker-address-wrapper select{
+    font-size:0.8rem !important;
+}
+
+.dialog-header{
+    position: absolute;
+    top: 12px;
+    right: 50px;
+ }
+ 
